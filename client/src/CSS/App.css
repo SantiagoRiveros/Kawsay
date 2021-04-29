@@ -92,8 +92,16 @@
   border-radius: 12px;
 }
 
+
+/* Consejos */
+
+.ecoList{
+  background-color: #7B9E67AD;
+}
+
 /* Footer */
 
 .footerColor{
   background-color: #23423E;
 }
+

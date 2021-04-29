@@ -6,15 +6,15 @@ export default function EcoAdvice() {
   const [location, setLocation] = useState("");
   const { push } = useHistory();
   return (
-    <div className="cover font-italic text-muted" style={{backgroundImage: `url("http://i.ibb.co/jgZph3V/fondo.png")`}}>
+    <div className="cover" style={{backgroundImage: `url("http://i.ibb.co/jgZph3V/fondo.png")`}}>
       <div>
-        <h2 className="mb-5 text-center">RECOMENDACIONES PARA REDUCIR LA HUELLA DE CARBONO</h2>
+        <h2 className="mb-5 text-center parH">Recomendaciones para reducir la huella de carbono</h2>
         <ListGroup horizontal className="mb-4 shadow text-center">
-          <ListGroup.Item action variant="success" onClick={() => setLocation("energia")}>Uso racional de la energía</ListGroup.Item>    
-          <ListGroup.Item action variant="success" onClick={() => setLocation("movilidad")}>Movilidad</ListGroup.Item>     
-          <ListGroup.Item action variant="success" onClick={() => setLocation("residuos")}>Residuos</ListGroup.Item>      
-          <ListGroup.Item action variant="success" onClick={() => setLocation("alimentacion")}>Alimentación</ListGroup.Item>     
-          <ListGroup.Item action variant="success" onClick={() => setLocation("arboles")}>Plantá árboles</ListGroup.Item>        </ListGroup>
+          <ListGroup.Item action variant ="success" className="ecoList font-weight-bold" onClick={() => setLocation("energia")}>Uso racional de la energía</ListGroup.Item>    
+          <ListGroup.Item action variant ="success"className="ecoList font-weight-bold" onClick={() => setLocation("movilidad")}>Movilidad</ListGroup.Item>     
+          <ListGroup.Item action variant ="success"className="ecoList font-weight-bold" onClick={() => setLocation("residuos")}>Residuos</ListGroup.Item>      
+          <ListGroup.Item action variant ="success" className="ecoList font-weight-bold" onClick={() => setLocation("alimentacion")}>Alimentación</ListGroup.Item>     
+          <ListGroup.Item action variant ="success" className="ecoList font-weight-bold" onClick={() => setLocation("arboles")}>Plantá árboles</ListGroup.Item>        </ListGroup>
       </div>
       <div>
         {location === "energia" ? (
