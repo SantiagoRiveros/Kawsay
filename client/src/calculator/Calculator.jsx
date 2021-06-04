@@ -706,3 +706,36 @@ export default function Calculator() {
     </>
   );
 }
+
+// MELI - A modificar por Santi
+
+// async function generarLinkPago() {
+//   const carritoFinal = totalCarrito.map((element) =>{
+//       let nuevoElemento = {
+//           title: element.nombre,
+//           description: "",
+//           picture_url: "",
+//           category_id: element.id,
+//           quantity: 1,
+//           currency_id: "ARS",
+//           unit_price: Number(element.precio),
+//       }; 
+//       return nuevoElemento;
+//   });
+//   console.log(carritoFinal);
+//   const response = await fetch(
+//       "https://api.mercadopago.com/checkout/preferences", 
+//       {
+//       method: "POST",
+//       headers: {
+//           Authorization: 
+//               "Bearer TEST-",    
+//   },
+//       body: JSON.stringify({
+//           items: carritoFinal,
+//   }),
+//   }
+//   );
+//   const data = await response.json()
+//   window.open(data.init_point, "_blank");
+// }
