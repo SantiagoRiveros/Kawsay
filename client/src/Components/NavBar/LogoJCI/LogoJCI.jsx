@@ -2,7 +2,7 @@ import LogoJCI from "./LogoJCI.jpg"
 
 const LogoJCIComponent = () => (
     <>
-        <img src={LogoJCI} alt='website logo' className="ml-5 pl-5"/>
+        <img src={LogoJCI} alt='website logo' className="ml-lg-5 pl-lg-5"/>
     </>
 );
 

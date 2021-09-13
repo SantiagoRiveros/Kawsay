@@ -1,5 +1,6 @@
-import { Nav, Navbar as NavbarBootstrap } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import { Nav, Navbar as NavbarBootstrap } from "react-bootstrap";
+
 import LogoJCIComponent from "./LogoJCI/LogoJCI";
 import LogoKawsayComponent from "./LogoKawsay/LogoKawsay";
 

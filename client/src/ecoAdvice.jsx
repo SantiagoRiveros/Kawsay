@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import { Container, ListGroup } from "react-bootstrap";
+import React, { useState } from "react";
+
 import { useHistory } from "react-router-dom";
 
 export default function EcoAdvice() {
@@ -55,8 +56,8 @@ export default function EcoAdvice() {
       <div>
         {location === "energia" ? (
           <div className="my-1 font-italic">
-            <Container className="ml-3 w-50">
-              <p className="my-1 font-italic">
+            <Container className="ml-0 col-8 col-sm-6 col-md-5 col-xl-6">
+              <p className="my-1">
                 &#10004; Priorizá el uso de iluminación natural.
               </p>
               <p className="my-1">
@@ -106,7 +107,7 @@ export default function EcoAdvice() {
         )}
         {location === "movilidad" ? (
           <div className="my-1 font-italic">
-            <Container className="ml-3 w-50">
+            <Container className="ml-0 col-9 col-sm-5 col-xl-6">
               <p className="my-1">
                 &#10004; Siempre que puedas y la distancia lo permita, usá la
                 bici.
@@ -143,7 +144,7 @@ export default function EcoAdvice() {
         )}
         {location === "residuos" ? (
           <div className="my-1 font-italic">
-            <Container className="ml-3 w-50">
+            <Container className="ml-0 col-9 col-sm-6 col-md-5 col-lg-4 col-xl-6">
               <p className="my-1">
                 &#10004; Reducí: evitá la generación innecesaria de residuos.
                 Para ello podés evitar comprar productos con mucho envoltorio,
@@ -175,7 +176,7 @@ export default function EcoAdvice() {
         )}
         {location === "alimentacion" ? (
           <div className="my-1 font-italic">
-            <Container className="ml-3 w-50">
+            <Container className="ml-0 col-8 col-sm-5 col-md-4 col-lg-5 col-xl-6">
               <p className="my-1">
                 &#10004; Se calcula que un 20% de los gases de efecto
                 invernadero se deben a la elaboración y comercialización de
@@ -200,7 +201,7 @@ export default function EcoAdvice() {
         )}
         {location === "arboles" ? (
           <div className="my-1 font-italic">
-            <Container className="ml-3 w-50">
+            <Container className="ml-0 col-7 col-sm-6 col-md-5 col-lg-6">
               &#10004; Los árboles retienen CO2, un árbol elimina entre 350 y
               3.500 kg. de CO2 aproximadamente en toda su vida, por ello
               impulsar la plantación de nuevos árboles, en especial especies
