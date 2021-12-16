@@ -1,13 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CSS/App.css";
-import NavBar from "./Components/NavBar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import Calculator from "./Calculator/Calculator.jsx";
-import EcoAdvice from "./ecoAdvice.jsx";
-import Donate from "./Donate.jsx";
-import Newsletter from "./Newsletter.jsx";
+import Donate from "./Components/Donate/index.jsx";
+import EcoAdvice from "./Components/EcoAdvice/index.jsx";
+import FAQ from "./Components/FAQ/index.jsx";
 import FooterComponent from "./Components/Footer";
-import FAQ from "./FAQ.jsx";
+import NavBar from "./Components/NavBar";
+import Newsletter from "./Newsletter.jsx";
 
 function App() {
   return (

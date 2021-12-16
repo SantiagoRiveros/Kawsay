@@ -1,8 +1,8 @@
 import { Link, useHistory } from "react-router-dom";
 import { Nav, Navbar as NavbarBootstrap } from "react-bootstrap";
 
-import LogoJCIComponent from "./LogoJCI/LogoJCI";
-import LogoKawsayComponent from "./LogoKawsay/LogoKawsay";
+import LogoJCIComponent from "./LogoJCI";
+import LogoKawsayComponent from "./LogoKawsay";
 
 const NavBar = () => {
   const { push } = useHistory();

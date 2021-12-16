@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { Container, ListGroup } from "react-bootstrap";
+import React, { useState } from "react";
 
 export default function FAQ() {
   const [location, setLocation] = useState("");
